@@ -1,0 +1,60 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./backend  # Path to the backend Dockerfile
+    ports:
+      - "5000:5000"  # Map container's port 5000 to host's port 5000
+    depends_on:
+      - db  # Wait for the database container to start
+    environment:
+      - MONGO_URI=${MONGO_URI}  # URI for backend to connect to the database
+      - FLASK_APP=${FLASK_APP}  # Specify the Flask application's module path as server.run
+      - FLASK_ENV=${FLASK_ENV}  # Set Flask environment to development mode
+    volumes:
+      - ./backend:/app  # Mount the backend directory to /app in the container
+    command: python /app/server/run.py  # Start the Flask application
+    networks:
+      - app_network
+
+  frontend:
+    build:
+      context: ./frontend  # Path to the frontend Dockerfile
+    ports:
+      - "3000:3000"  # Map container's port 3000 to host's port 3000
+    depends_on:
+      - backend  # Wait for the backend container to start
+    networks:
+      - app_network
+
+
+
+
+  db:
+    # Name of the container is set to mongo
+    container_name: mongo
+    # Use the latest MongoDB image
+    image: mongo:latest
+    # Automatically restart the MongoDB container when the Docker service starts
+    restart: always
+    # Expose MongoDB port to the host
+    ports:
+      - "27017:27017"
+    environment:
+      # Initialize a root user with username 'root' and password 'root'
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
+    # Map the host directory to the container directory for persistent storage
+    volumes:
+      - ./data/db:/data/db
+    # Add the --auth parameter to require authentication for MongoDB connections
+    command:
+      - "--auth"
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
+
+     

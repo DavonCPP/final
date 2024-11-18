@@ -1,0 +1,1 @@
+[{"_id":{"$oid":"6701fb9776770000a3003743"},"email":"admin@test.com","name":"admin","password_hash":"7cbb8a714b6fd63df1b6bc17fc1ab24d42d134f7c5db2785d06b963bf316bb3e","role":"admin","status":"active","created_at":{"$date":"2024-10-06T09:00:00Z"}}]

@@ -1,0 +1,5 @@
+[{"_id":{"$oid":"67023acbedf5d170a3ea5bdd"},"email":"bbb@test.com","ip_address":"127.0.0.1","success":true,"reason":"success","attempted_at":{"$date":"2024-10-06T15:22:51.012Z"}},
+{"_id":{"$oid":"67023d2dedf5d170a3ea5bde"},"email":"bbb@test.com","ip_address":"127.0.0.1","success":true,"reason":"success","attempted_at":{"$date":"2024-10-06T15:33:01.834Z"}},
+{"_id":{"$oid":"67023d47edf5d170a3ea5bdf"},"email":"aaa@test.com","ip_address":"127.0.0.1","success":false,"reason":"Incorrect email or password!","attempted_at":{"$date":"2024-10-06T15:33:27.935Z"}},
+{"_id":{"$oid":"67023e1bcf9c0007ad1c9e20"},"email":"admin@test.com","ip_address":"127.0.0.1","success":false,"reason":"Incorrect password!","attempted_at":{"$date":"2024-10-06T15:36:59.995Z"}},
+{"_id":{"$oid":"67023e29cf9c0007ad1c9e21"},"email":"admin@test.com","ip_address":"127.0.0.1","success":true,"reason":"success","attempted_at":{"$date":"2024-10-06T15:37:13.368Z"}}]
