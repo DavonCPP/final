@@ -1,0 +1,336 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: #1f2937;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .logout-button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .page-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    padding: 0.6rem;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .action-button {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .download-button {
+    background-color: #14b8a6;
+    margin-right: 0.5rem;
+  }
+  
+  .view-scores-button {
+    background-color: #22c55e;
+  }
+  
+  .company-info {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+  }
+  
+  .tab-button {
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .tab-button.active {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  .tab-button:not(.active) {
+    background-color: #e5e7eb;
+    color: black;
+  }
+  
+  .content-wrapper {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 25%;
+    padding-right: 1rem;
+  }
+  
+  .main-panel {
+    width: 75%;
+  }
+  
+  .content-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .content-list {
+    font-size: 0.875rem;
+    padding-left: 1.5rem;
+  }
+  
+  .data-panel {
+    background-color: #eff6ff;
+    padding: 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  .data-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .data-title {
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .data-provider {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .data-description {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  
+  .data-value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .value {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .unit {
+    font-size: 0.875rem;
+    margin-left: 0.5rem;
+  }
+  
+  .disclosure {
+    background-color: #22c55e;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+  }
+  
+  .na-value {
+    color: #ef4444;
+  }
+  
+  .expand-button {
+    color: #3b82f6;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .content-wrapper {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .sidebar {
+    flex: 0 0 300px;
+    border-right: 1px solid #e5e7eb;
+    padding-right: 1rem;
+  }
+  
+  .content-panel {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .panel-header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .panel-header h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .year-filters {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .year-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    background: #f9fafb;
+    cursor: pointer;
+  }
+  
+  .year-button.active {
+    background: #3b82f6;
+    color: white;
+    border-color: #3b82f6;
+  }
+  
+  .metrics-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .metrics-table th,
+  .metrics-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .metrics-table th {
+    background: #f9fafb;
+    font-weight: 600;
+  }
+  
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .pagination-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  
+  .pagination-button:disabled {
+    background: #f3f4f6;
+    cursor: not-allowed;
+  }
+
+  .navLink {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-family: inherit;
+  }
+  
+  /* 可以添加悬停效果 */
+  .navLink:hover {
+    opacity: 0.8;
+  }
+
+  .nav-menu li a {
+    color: white;                /* 保持白色文字 */
+    text-decoration: none;       /* 移除下划线 */
+    font-size: 1.0rem;          /* 保持字体大小 */
+
+  }
+  
+  /* 可选：添加悬停效果 */
+  .nav-menu li a:hover {
+    opacity: 0.8;
+  }
+
+  .main-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 5rem;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    padding-top: 5rem;
+    justify-content: center;
+  }
+
+  .input-area label {
+    display: inline-block;
+    width: 95px;
+    height: 20px;
+  }
+
+  .input-area {
+    margin-bottom: 10px;
+  }
+
+
+
+

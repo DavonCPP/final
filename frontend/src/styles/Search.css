@@ -1,0 +1,135 @@
+body {
+    background-color: rgb(242, 234, 211);
+}
+
+.home-header {
+    background-color: rgb(238, 200, 148);
+    width: 100%;
+    height: 150px;
+}
+
+.home-header h1 {
+    font-size: 50pt;
+    margin-top: 0px;
+    padding-left: 50px;
+    padding-top: 40px;
+}
+
+.home-body {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.home-body-up-container {
+    display: flex;
+    padding-top: 15px;
+    flex: 5;
+}
+
+.home-body-up-container div {
+    padding-right: 20px;
+}
+
+.home-body-up-container label {
+    font-size: 25pt;
+}
+
+.home-body-up-container button {
+    margin-top: 40px;
+    height: 30px;
+    width: 80px;
+}
+
+/* .home-body-up-container button {
+    margin-top: 23px;
+    width: 80px;
+    height: 30px;
+} */
+
+.home-body-down-class-info {
+    display: flex;
+    /* flex: 1; */
+}
+
+.home-body-down-class-info-left {
+    height: 500px;
+    width: 100%;
+    flex: 2;
+}
+
+.select-class {
+    border: 1px solid gray;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-indicator {
+    padding-top: 10px;
+}
+
+.home-body-down-class-info-left label {
+    font-size: 18pt;
+}
+
+.home-body-down-class-info-right-left-down {
+    height: 89%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.select-year {
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    padding-top: 10px;
+}
+
+.home-body-down-class-info-right-left-up {
+    height: 50px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-body-down-class-info-right {
+    height: 500px;
+    width: 100%;
+    flex: 6;
+}
+
+.home-body-down-class-info-right {
+    display: flex;
+}
+
+.home-body-down-class-info-right div {
+    border: 1px solid black;
+}
+
+.home-body-down-class-info-right-left {
+    flex: 5;
+}
+
+.info-frame {
+    flex: 1;
+}
+
+.info {
+    height: 89%;
+}
+
+.info-title {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+#compare {
+    height: 20px;
+    width: 100px;
+    background-color: gray;
+    color: white;
+}

@@ -1,0 +1,156 @@
+.container {
+  min-height: 100vh;
+  background-color: #1a202c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative; 
+  background-image: url('../components/ESG.jpg'); 
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header {
+  padding: 1rem;
+  position: relative;
+  z-index: 10;
+  background-color: rgba(26, 32, 44, 0.7);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: #48bb78;
+  margin-right: 0.5rem;
+}
+
+.logoText {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white; 
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 1rem;
+  position: relative; 
+  z-index: 5;
+}
+
+.content {
+  text-align: center;
+  max-width: 42rem;
+  padding: 2rem;
+  background-color: rgba(26, 32, 44, 0.6); 
+  border-radius: 1rem;
+  backdrop-filter: blur(8px); 
+  margin-top: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.description {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: white;
+  line-height: 1.6;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.signUpButton, .loginButton {
+  font-weight: bold;
+  padding: 0.75rem 1.5rem; 
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.signUpButton {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.signUpButton:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.loginButton {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.loginButton:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+:global(.chat-window) {
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+  }
+  
+  .content {
+    margin-top: 2rem;
+    padding: 1.5rem;
+  }
+  
+  .buttonContainer {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .signUpButton, .loginButton {
+    width: 100%;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .container {
+    background-color: #1a202c;
+  }
+  
+  .content {
+    background-color: rgba(26, 32, 44, 0.8);
+  }
+}

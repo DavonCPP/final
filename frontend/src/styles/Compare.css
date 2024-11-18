@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+/* .container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 5rem;
+    border-radius: 0.25rem;
+} */
+
+.framework {
+    background-color: white;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+}
+
+/* .button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+} */
+
+#select-framework {
+    padding: 0.5rem 1rem;
+}
+
+.input-weight {
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border: #bcbbbb solid 0.5px;
+    border-radius: 0.25rem;
+    width: 4rem;
+    height: 2rem;
+}
+
+.compare-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
